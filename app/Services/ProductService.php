@@ -51,7 +51,7 @@ class ProductService
         return response()->json("Product Updated");
     }
 
-     public function delete($id){
+     public function deleteProduct($id){
 
         $product = $model::find($id);
         $product->delete();
